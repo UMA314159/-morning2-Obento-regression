@@ -34,3 +34,8 @@ https://signate.jp/competitions/24
 - 備考：ロジスティックとランダムフォレストを複合したモデル。　SIGNATEのチュートリアルを参考
 
 # ②モデル作成：lightgbm　（参考：https://qiita.com/chusan/items/d7b210243f3b646375ba）
+- モデル：GBDT
+- ライブラリ：lightgbm
+- データ分割：TimeSeriesesesSplit
+- 目的関数：RMSE
+- 備考：one-hot-encodingを行なったが、特徴量が多くなり処理に時間がかかる。GBDT系のライブラリを使う場合は、Label-Encodingで充分なので、次回はLabelーEncodingでやってみよう！
